@@ -56,8 +56,7 @@ module tb_riscMachine(output err);
 
     start_pc <= 8'd1;
     #50
-
-    
+   
     //test 3 - R3 has 12
     start_pc <= 8'd3;       //ADD R3, R1, R2
     rst_n <= 1'b0;
