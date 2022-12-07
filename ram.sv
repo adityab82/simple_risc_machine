@@ -11,3 +11,4 @@ module ram(input clk, input ram_w_en, input [7:0] ram_r_addr, input [7:0] ram_w_
     end
     initial $readmemb("ram_init.txt", m);
 endmodule: ram
+
