@@ -28,7 +28,7 @@ module riscMachine(input clk, input rst_n, input [7:0] start_pc, output[15:0] ou
 
     assign ram_r_addr = sel_addr ? pc : dar_out;
     assign ram_w_addr = sel_addr ? pc : dar_out;
-    
+ 
 
 /*
 module status(input clk, input en_status, output reg Z_out, output reg N_out, output reg V_out);
