@@ -1,4 +1,4 @@
-module tb_task3(output err);
+module tb_riscMachine(output err);
   // your implementation here
     reg clk, rst_n;
     reg [7:0] start_pc;
@@ -12,7 +12,7 @@ module tb_task3(output err);
 
     //assign passed = 4'd10 - failed;
 
-    task3 dut(.clk, .rst_n, .start_pc, .out);
+    riscMachine dut(.clk, .rst_n, .start_pc, .out);
 
     initial begin
     error <= 1'b0;
@@ -224,4 +224,4 @@ module tb_task3(output err);
 
   end
 
-endmodule: tb_task3
+endmodule: tb_riscMachine
