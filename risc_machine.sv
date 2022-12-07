@@ -85,11 +85,6 @@ module idecoder(input [15:0] ir, input [1:0] reg_sel,
     if(opcode == 3'b011 || opcode == 3'b100) shift_op = 2'b00;
     else shift_op = ir[4:3];
   end
-
-
-
-
-
 endmodule//: idecoder
 
 
