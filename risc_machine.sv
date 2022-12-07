@@ -28,9 +28,9 @@ module riscMachine(input clk, input rst_n, input [7:0] start_pc, output[15:0] ou
 
     assign ram_r_addr = sel_addr ? pc : dar_out;
     assign ram_w_addr = sel_addr ? pc : dar_out;
- 
-
+	
 endmodule: riscMachine
+
 
 module ram(input clk, input ram_w_en, input [7:0] ram_r_addr, input [7:0] ram_w_addr,
            input [15:0] ram_w_data, output reg [15:0] ram_r_data);
