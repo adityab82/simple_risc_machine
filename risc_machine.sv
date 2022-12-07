@@ -30,19 +30,6 @@ module riscMachine(input clk, input rst_n, input [7:0] start_pc, output[15:0] ou
     assign ram_w_addr = sel_addr ? pc : dar_out;
  
 
-/*
-module status(input clk, input en_status, output reg Z_out, output reg N_out, output reg V_out);
-
-    always_ff @(posedge clk) begin
-        if (en_status) begin
-            Z_out <= Z;
-            N_out <= N;
-            V_out <= V;
-        end
-    end
-endmodule: status*/
-
-
 endmodule: riscMachine
 
 module ram(input clk, input ram_w_en, input [7:0] ram_r_addr, input [7:0] ram_w_addr,
